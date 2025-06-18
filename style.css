@@ -1,36 +1,130 @@
-/* Apply styles to the entire page */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Header Styling */
-header {
-    background-color: #333;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
     color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-/* Section Styling */
-section {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
+    overflow-x: hidden;
+  }
+  
+  header {
+    padding: 20px 50px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links .active {
+    color: #00f0ff;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    border-radius: 20px;
+    margin: 50px;
+    background-color: #1e293b;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #00f0ff;
+  }
+  
+  .hero-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #cbd5e1;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .socials a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #00f0ff;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00f0ff;
+    color: #000;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .hero-img .hexagon {
+    width: 280px;
+    height: 280px;
+    background: #00f0ff;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px #00f0ff;
+  }
+  
+  .hero-img img {
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    transform: scale(2.5)translateY(35px);
+  }
+  
