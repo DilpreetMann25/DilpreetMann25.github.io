@@ -9,6 +9,7 @@
     background-color: #0f172a;
     color: white;
     overflow-x: hidden;
+    font-size: 18px; 
   }
   
   header {
@@ -58,18 +59,18 @@
   }
   
   .hero-content h3 {
-    font-size: 20px;
+    font-size: 22px; /* Increased font size */
     margin-bottom: 10px;
   }
   
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 45px; /* Increased font size */
     font-weight: 700;
     margin-bottom: 10px;
   }
   
   .hero-content h2 {
-    font-size: 24px;
+    font-size: 28px; /* Increased font size */
     margin-bottom: 20px;
   }
   
@@ -78,6 +79,7 @@
   }
   
   .hero-content p {
+    font-size: 20px; 
     margin-bottom: 20px;
     line-height: 1.6;
     color: #cbd5e1;
@@ -143,7 +145,7 @@
   }
   
   .about h2 {
-    font-size: 32px;
+    font-size: 36px; /* Increased font size */
     margin-bottom: 30px;
     border-bottom: 2px solid #00f0ff;
     display: inline-block;
@@ -154,4 +156,144 @@
     margin-bottom: 20px;
     line-height: 1.6;
     color: #cbd5e1;
+    font-size: 18px; /* Increased font size */
   }
+  
+  .skills {
+    padding: 50px;
+    margin: 50px;
+    background-color: #1e293b;
+    border-radius: 20px;
+    color: #cbd5e1;
+  }
+  
+  .skills-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 36px; /* Increased font size */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00f0ff;
+    display: inline-block;
+    color: white;
+  }
+  .skills p {
+    margin-bottom: 20px;
+    line-height: 1.8; /* Slightly increased for better readability */
+    font-size: 18px; /* Increased font size */
+    color: #cbd5e1;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Increased gap for better spacing */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    background: #334155;
+    padding: 15px 25px; /* Increased padding for larger boxes */
+    border-radius: 8px;
+    color: #cbd5e1;
+    font-size: 18px; /* Increased font size */
+    font-weight: 500;
+    transition: transform 0.3s;
+  }
+  
+  .skills-list li:hover {
+    transform: scale(1.1);
+  }
+  
+  .portfolio {
+    padding: 50px;
+    margin: 50px;
+    background-color: #1e293b;
+    border-radius: 20px;
+    color: #cbd5e1;
+  }
+  
+  .portfolio-container {
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00f0ff;
+    display: inline-block;
+    color: white;
+  }
+  
+  .portfolio p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Increased gap for better spacing */
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    background: #334155;
+    padding: 30px; /* Increased padding for larger boxes */
+    border-radius: 8px;
+    color: #cbd5e1;
+    width: 90%; /* Increased width to occupy more horizontal space */
+    display: flex; /* Flex layout for image and text alignment */
+    align-items: center;
+    gap: 30px; /* Space between image and text */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    border: 2px solid #00f0ff; /* Add border with the same color as "Student" */
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Smooth scaling and border effect */
+  }
+  
+  .portfolio-item img {
+    width: 180px; /* Fixed width for images */
+    height: 180px; /* Fixed height for images */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image fits within the fixed dimensions */
+  }
+  
+  .portfolio-item h3 {
+    font-size: 24px; /* Increased font size for titles */
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item p {
+    font-size: 18px; /* Increased font size for descriptions */
+  }
+  
+  .portfolio-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the link behave like a block element */
+  }
+  
+  .portfolio-link:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+  }
+  
+  .subheading {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid #00f0ff;
+    display: inline-block;
+  }
+
