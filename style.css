@@ -346,4 +346,12 @@
     border-bottom: 2px solid #00f0ff;
     display: inline-block;
   }
+  
+  .leetcode-logo {
+    width: 30px; /* Match size with other icons */
+    height: auto;
+    display: inline-block; /* Ensure it behaves like other inline elements */
+    vertical-align: middle; /* Align it with the text and other icons */
+    margin-top: -2px; /* Adjust vertical spacing for better alignment */
+  }
 
