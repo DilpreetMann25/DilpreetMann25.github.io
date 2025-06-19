@@ -139,24 +139,43 @@
   }
   
   .about-container {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Space between image and text */
+    padding: 50px;
   }
   
-  .about h2 {
-    font-size: 36px; /* Increased font size */
-    margin-bottom: 30px;
-    border-bottom: 2px solid #00f0ff;
-    display: inline-block;
-    color: white;
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Space between image and text */
   }
   
-  .about p {
+  .about-image img {
+    width: 300px; /* Fixed width for the image */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .about-text {
+    max-width: 600px; /* Limit the width of the text */
+  }
+  
+  .about-text h2 {
+    font-size: 36px;
     margin-bottom: 20px;
+    color: white;
+    border-bottom: 2px solid #00f0ff; /* Add blue line under "About Me" */
+    display: inline-block; /* Ensures the border is applied only to the text */
+  }
+  
+  .about-text p {
+    font-size: 18px;
     line-height: 1.6;
     color: #cbd5e1;
-    font-size: 18px; /* Increased font size */
+    margin-bottom: 15px;
   }
   
   .skills {
@@ -187,25 +206,56 @@
     color: #cbd5e1;
   }
   .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px; /* Increased gap for better spacing */
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between skill boxes */
   }
   
   .skills-list li {
     background: #334155;
-    padding: 15px 25px; /* Increased padding for larger boxes */
+    padding: 15px 30px; /* Padding for skill boxes */
     border-radius: 8px;
     color: #cbd5e1;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px; /* Font size for skill text */
     font-weight: 500;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out; /* Smooth transition for hover effect */
+    position: relative;
+    height: 60px; /* Default height for skill boxes */
+    overflow: hidden; /* Hide progress bar initially */
   }
   
   .skills-list li:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slightly expand on hover */
+    padding: 20px 35px; /* Increase padding on hover */
+    height: 80px; /* Expand height to reveal progress bar */
+  }
+  
+  .skills-list li span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    background: #1e293b;
+    height: 6px; /* Reduced height for leaner progress bar */
+    border-radius: 3px; /* Smaller border radius */
+    overflow: hidden;
+    position: relative;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth appearance */
+  }
+  
+  .skills-list li:hover .progress-bar {
+    opacity: 1; /* Show progress bar on hover */
+  }
+  
+  .progress {
+    background: #00f0ff; /* Same color as "Student" in the hero section */
+    height: 100%;
+    border-radius: 3px; /* Smaller border radius for progress */
+    transition: width 0.3s ease-in-out;
   }
   
   .portfolio {
