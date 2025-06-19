@@ -1,21 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const portfolioItems = document.querySelectorAll(".portfolio-item");
+  // Scroll to the "Home" section on page load
+  const homeSection = document.getElementById("home");
+  window.scrollTo({
+    top: homeSection.offsetTop,
+    behavior: "auto", // Instantly scroll to the top without animation
+  });
 
-  portfolioItems.forEach((item) => {
-    item.addEventListener("mouseenter", () => {
-      const description = item.querySelector("p");
-      if (description) {
-        description.style.opacity = "1";
-        description.style.pointerEvents = "auto";
-      }
-    });
+  // Smooth scrolling for navigation links
+  const navLinks = document.querySelectorAll(".nav-links a");
 
-    item.addEventListener("mouseleave", () => {
-      const description = item.querySelector("p");
-      if (description) {
-        description.style.opacity = "0";
-        description.style.pointerEvents = "none";
-      }
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      // Smooth scrolling to the target section
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth", // Smooth scrolling
+      });
     });
   });
 });
