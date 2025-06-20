@@ -2,7 +2,7 @@
 
 # 🧑‍💻 Dilpreet Mann's Portfolio Website
 
-Welcome to my personal portfolio website repository! This project showcases my development skills, personal projects, and professional experience as a Computing Science student at Simon Fraser University. It’s built with clean HTML, CSS, and JavaScript, and is fully responsive for both desktop and mobile users.
+Welcome to my personal portfolio website repository! This project showcases my development skills, personal projects, and professional experience as a Computing Science student at Simon Fraser University. It’s built with clean HTML, CSS, and JavaScript, and is fully responsive for desktop.
 
 ---
 
