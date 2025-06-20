@@ -1,4 +1,4 @@
-# My Personal Portfolio Website - [https://dilpreetmann25.github.io](DilpreetMann25.github.io)
+# My Personal Portfolio Website - [https://dilpreetmann25.github.io](https://dilpreetmann25.github.io)
 
 # 🧑‍💻 Dilpreet Mann's Portfolio Website
 
