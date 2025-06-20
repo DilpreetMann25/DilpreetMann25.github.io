@@ -37,7 +37,6 @@ You can view the deployed version of this website at:
 🔗 [https://DilpreetMann25.github.io](https://DilpreetMann25.github.io)
 
 ---
-
 ## Why I Chose the MIT License
 
 I chose the MIT License for my project because it is a permissive and straightforward open-source license. Here’s why it works for me:
@@ -53,5 +52,6 @@ I chose the MIT License for my project because it is a permissive and straightfo
 
 ---
 Thank you for checking out my portfolio website repository!
+
 
 
